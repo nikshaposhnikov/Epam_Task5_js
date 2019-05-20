@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .forms{
+            display: flex;
+        }
+        form {
+            width: 40%;
+            border: 1px solid black;
+        }
+
+        td {
+            border: 1px solid #000;
+            padding: 5px
+        }
+
+        p {
+            padding: 5px;
+        }
+
+        input {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<table className="table">
+
+</table>
+<div class="forms">
+    <form name="add">
+        <p><b>Добавление авто</b></p>
+        <p>Введите марку: <input type="text" name="mark"><br>
+            Введите модель: <input type="text" name="model"><br>
+            Введите год выпуска: <input type="text" name="year"><br>
+            Введите цвет: <input type="text" name="color"><br>
+            Введите цену: <input type="text" name="price">$<br>
+            Введите регистрационный номер: <input type="text" name="number"><br>
+            <input type="button" name="bt" VALUE="Добавить"
+                   onClick="addCar();"></p>
+    </form>
+    <form name="sortByMarks">
+        <p><b>Сортировка по марке</b></p>
+       <p> Введите марку <input type="text" name="sortMark"><br>
+        <INPUT TYPE="button" VALUE="Сортировка по марке"
+               onClick="sortByMark();"></p>
+    </form>
+    <form name="sortByPrices">
+        <p><b>Сортировка по цене и году выпуска</b></p>
+        <p>Цена более <input type="text" name="sortPrice"><br>
+        Введите год выпуска <input type="text" name="sortYear"><br>
+        <INPUT TYPE="button" VALUE="Сортировка по марке"
+               onClick="sortByPrice();"></p>
+    </form>
+    <form name="sortByModels">
+        <p><b>Сортировка по модели и времени эксплуатации</b></p>
+        <p>Введите модель <input type="text" name="sortModel"><br>
+        Эксплуатируется более <input type="text" name="sortYear"> лет<br>
+        <INPUT TYPE="button" VALUE="Сортировка по модели и времени эксплуатации"
+               onClick="sortByModel();"></p>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
